@@ -303,7 +303,7 @@ class LINE:
 
       prof = self.getProfile()
 
-      print("Chivas")
+      print("Dragon")
       print("mid -> " + prof.mid)
       print("name -> " + prof.displayName)
       print("authToken -> " + self.authToken)
