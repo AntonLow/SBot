@@ -24,8 +24,28 @@ print "login success"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage =""" Chivas Bot
-[Id︎]
+helpMessage =""" Dragon BOT
+]|I{•----» •㉿Continental™ «----•}I|[
+===============================================
+[Administrator by]
+• [BLVCK DRAGON]™
+• CNN/Bot Division 
+• BD.CBOT-188
+
+-㉿-  CommandMember -㉿-
+-----------------------------------------------
+[Creator = Melihat Pembuat Bot]
+[Say = Mengikuti Apa Yang DiKatakan]
+[Gcreator = Check Creator Grup]
+
+-㉿-  Command Creator -㉿-
+-----------------------------------------------
+[Admin add @] Menambahkan Admin
+[Admin remove @]  Menghapus Admin
+[Adminlist] Cek Admin
+
+-㉿- Command Admin -㉿-
+-----------------------------------------------
 [Mid]
 [Me︎]
 [TL︎:「Text」]
@@ -43,47 +63,56 @@ helpMessage =""" Chivas Bot
 [Jam on/off]
 [Change clock:「name」]
 [Up]
-[Cv join]
 
-[*] Command in the groups [*]
-
+-㉿-  Command in the Groups -㉿-
+-----------------------------------------------
 [Curl]
 [Ourl]
 [url]
-[url:「Group ID」]
+[url:「Group ID」
 [Invite：「mid」]
 [Kick：「mid」]
 [Ginfo]
 [Cancel]
 [Gn 「group name」]
 [Nk 「name」]
+[All gift]
+[All mid]
+[All join]
 
-[*] Command kicker only [*]
-
+-㉿-  Command Kicker Only -㉿-
+-----------------------------------------------
 [Bye]
-[Kill ban]
-[Kill 「@」]
-[Ban 「@」] By Tag
-[Unban 「@」] By Tag
+[Kill ban] Share Contact
+[Kill] Share Contact
+[Ban @]
+[Unban @]
 [Ban︎] Share Contact
 [Unban︎] Share Contact
 [Banlist︎]
 [Cek ban]
-[Cv mid]
-[Cv ︎invite:「mid」]
-[Cv ︎rename:「name」]
-[Cv ︎gift]
 [Respo︎n]
 [Bot cancel]
 [Title:]
+[Vk @]
+[Attack]
+===============================================
+Respect with our people then they will respect to you too,
+Enjoy and relax sir!
+
+[Author By]
+- B L V C K  H I T T E R -
+{ •㉿Continental™• }
 """
+
 KAC=[cl,ki,kk,kc]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
 Cmid = kc.getProfile().mid
 Bots=[mid,Amid,Bmid,Cmid]
-admin=["YOUR_MID_HERE"]
+admin=["u813e54635fa8ca8c016090e933582652","u8d67d89eeade3917f713d3d3f22df048"]
+creator=["u813e54635fa8ca8c016090e933582652"]
 wait = {
     'contact':True,
     'autoJoin':True,
@@ -98,8 +127,7 @@ wait = {
     "commentBlack":{},
     "wblack":False,
     "dblack":False,
-    "clock":True,
-    "cName":"Chivas ",
+    "clock":False,
     "blacklist":{},
     "wblacklist":False,
     "dblacklist":False,
@@ -1306,7 +1334,7 @@ def bot(op):
                 else:
                     cl.sendText(msg.to,"Please turn on the name clock")
 
-            elif msg.text == "$set":
+            elif msg.text == "Check":
                     cl.sendText(msg.to, "Check sider")
                     ki.sendText(msg.to, "Check sider")
                     kk.sendText(msg.to, "Check sider")
@@ -1320,7 +1348,7 @@ def bot(op):
                     wait2['readMember'][msg.to] = ""
                     wait2['ROM'][msg.to] = {}
                     print wait2
-            elif msg.text == "$read":
+            elif msg.text == "Read":
                     if msg.to in wait2['readPoint']:
                         if wait2["ROM"][msg.to].items() == []:
                             chiya = ""
@@ -1332,7 +1360,7 @@ def bot(op):
 
                         cl.sendText(msg.to, "People who readed %s\nthat's it\n\nPeople who have ignored reads\n%sIt is abnormal ♪\n\nReading point creation date n time:\n[%s]"  % (wait2['readMember'][msg.to],chiya,setTime[msg.to]))
                     else:
-                        cl.sendText(msg.to, "An already read point has not been set.\n「set」you can send ♪ read point will be created ♪")
+                        cl.sendText(msg.to, "An already read point has not been set.\n「Check」you can send ♪ read point will be created ♪")
 #-----------------------------------------------
 
 #-----------------------------------------------
@@ -1449,8 +1477,8 @@ def bot(op):
                     for tag in wait["blacklist"]:
                         matched_list+=filter(lambda str: str == tag, gMembMids)
                     if matched_list == []:
-                        kk.sendText(msg.to,"Fuck You")
-                        kc.sendText(msg.to,"Fuck You")
+                        kk.sendText(msg.to,"Killed by [BLVCK DRVGON]™")
+                        kc.sendText(msg.to,"Killed by [BLVCK DRVGON]™")
                         return
                     for jj in matched_list:
                         try:
@@ -1469,7 +1497,7 @@ def bot(op):
                     gs = kc.getGroup(msg.to)
                     ki.sendText(msg.to,"Just some casual cleansing ô")
                     kk.sendText(msg.to,"Group cleansed.")
-                    kc.sendText(msg.to,"Fuck You All")
+                    kc.sendText(msg.to,"Cleansed by [BLVCK DRVGON]™")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
@@ -1595,9 +1623,9 @@ def bot(op):
                                 kc.sendText(msg.to,"Succes Cv")
 #-----------------------------------------------
             elif msg.text in ["Test"]:
-                ki.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
-                kk.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
-                kc.sendText(msg.to,"Ok Cv 􀨁􀄻double thumbs up􏿿")
+                ki.sendText(msg.to,"Ok [BLVCK DRVGON]™ 􀨁􀄻double thumbs up􏿿")
+                kk.sendText(msg.to,"Ok [BLVCK DRVGON]™ 􀨁􀄻double thumbs up􏿿")
+                kc.sendText(msg.to,"Ok [BLVCK DRVGON]™ 􀨁􀄻double thumbs up􏿿")
 #-----------------------------------------------
             elif "Bc " in msg.text:
 				bctxt = msg.text.replace("Bc ","")
@@ -1605,33 +1633,158 @@ def bot(op):
 				kk.sendText(msg.to,(bctxt))
 				kc.sendText(msg.to,(bctxt))
 #-----------------------------------------------
+            elif "Vk " in msg.text:
+              if msg.from_ in admin:
+                key = eval(msg.contentMetadata["MENTION"])
+                key["MENTIONEES"][0]["M"]
+                targets = []
+                for x in key["MENTIONEES"]:
+                    targets.append(x["M"])
+                for target in targets:
+                   try:
+                      cl.kickoutFromGroup(msg.to,[target])
+                   except:
+                      pass
+#-----------------------------------------------
+            elif "Say " in msg.text:
+					bctxt = msg.text.replace("Say ","")
+					ki.sendText(msg.to,(bctxt))
+#-----------------------------------------------
+            elif msg.text in ["Creator"]:
+					msg.contentType = 13
+					msg.contentMetadata = {'mid': "u813e54635fa8ca8c016090e933582652"}
+					cl.sendMessage(msg)
+#-----------------------------------------------
+            elif msg.text in ["Gcreator"]:
+              if msg.toType == 2:
+                    msg.contentType = 13
+                    ginfo = cl.getGroup(msg.to)
+                    gCreator = ginfo.creator.mid
+                    try:
+                        msg.contentMetadata = {'mid': gCreator}
+                        gCreator1 = ginfo.creator.displayName
+                        
+                    except:
+                        gCreator = "Error"
+                    cl.sendText(msg.to, "Group Creator : " + gCreator1)
+                    cl.sendMessage(msg)
+#-----------------------------------------------
+            elif msg.text in ["Tagall"]:
+              if msg.from_ in admin:
+                group = cl.getGroup(msg.to)
+                nama = [contact.mid for contact in group.members]
+                cb = ""
+                cb2 = ""
+                strt = int(0)
+                akh = int(0)
+                for md in nama:
+                    akh = akh + int(5)
+                    cb += """{"S":"""+json.dumps(str(strt))+""","E":"""+json.dumps(str(akh))+""","M":"""+json.dumps(md)+"},"""
+                    strt = strt + int(6)
+                    akh = akh + 1
+                    cb2 += "@nrik\n"
+                cb = (cb[:int(len(cb)-1)])
+                msg.contentType = 0
+                msg.text = cb2
+                msg.contentMetadata ={'MENTION':'{"MENTIONEES":['+cb+']}','EMTVER':'4'}
+                try:
+                    ki.sendMessage(msg)
+                except Exception as error:
+                    print error
+#-----------------------------------------------
+            elif "Admin add @" in msg.text:
+                if msg.from_ in creator:
+                    print "[Command]Staff add executing"
+                    _name = msg.text.replace("Admin add @","")
+                    _nametarget = _name.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    gs = ki.getGroup(msg.to)
+                    gs = kk.getGroup(msg.to)
+                    gs = kc.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                admin.append(target)
+                                cl.sendText(msg.to,"Admin Ditambahkan")
+                            except:
+                                pass
+                    print "[Command]Staff add executed"
+                else:
+                    cl.sendText(msg.to,"Command DiTolak")
+                    cl.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
 
-            elif msg.text in ["Cv say hi"]:
+            elif "Admin remove @" in msg.text:
+                if msg.from_ in creator:
+                    print "[Command]Staff remove executing"
+                    _name = msg.text.replace("Admin remove @","")
+                    _nametarget = _name.rstrip('  ')
+                    gs = cl.getGroup(msg.to)
+                    gs = ki.getGroup(msg.to)
+                    gs = kk.getGroup(msg.to)
+                    gs = kc.getGroup(msg.to)
+                    targets = []
+                    for g in gs.members:
+                        if _nametarget == g.displayName:
+                            targets.append(g.mid)
+                    if targets == []:
+                        ki.sendText(msg.to,"Contact not found")
+                    else:
+                        for target in targets:
+                            try:
+                                admin.remove(target)
+                                cl.sendText(msg.to,"Admin Dihapus")
+                            except:
+                                pass
+                    print "[Command]Staff remove executed"
+                else:
+                    cl.sendText(msg.to,"Command DiTolak")
+                    cl.sendText(msg.to,"Admin Tidak Bisa Menggunakan")
+
+            elif msg.text in ["Adminlist","adminlist"]:
+              if msg.from_ in creator:
+                if admin == []:
+                    cl.sendText(msg.to,"The adminlist is empty")
+                else:
+                    cl.sendText(msg.to,"Tunggu...")
+                    mc = ""
+                    for mi_d in admin:
+                        mc += "->" +cl.getContact(mi_d).displayName + "\n"
+                    cl.sendText(msg.to,mc)
+		print "[Command]Stafflist executed"
+#-----------------------------------------------
+
+            elif msg.text in ["Say hi"]:
                 ki.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Hi buddy 􀜁􀅔Har Har􏿿")
 
 #-----------------------------------------------
 
-            elif msg.text in ["Cv say hinata pekok"]:
+            elif msg.text in ["Say hinata pekok"]:
                 ki.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Hinata pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say didik pekok"]:
+            elif msg.text in ["Say didik pekok"]:
                 ki.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Didik pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say bobo ah","Bobo dulu ah"]:
+            elif msg.text in ["Say bobo ah","Bobo dulu ah"]:
                 ki.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Have a nice dream Cv 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["Cv say chomel pekok"]:
+            elif msg.text in ["Say chomel pekok"]:
                 ki.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
                 kk.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
                 kc.sendText(msg.to,"Chomel pekok 􀜁􀅔Har Har􏿿")
-            elif msg.text in ["#welcome"]:
-                ki.sendText(msg.to,"Selamat datang di Chivas Family Room")
-                kk.sendText(msg.to,"Jangan nakal ok!")
+            elif msg.text in ["Welcome"]:
+                ki.sendText(msg.to,"Selamat datang di Dragon Cave")
+                kk.sendText(msg.to,"This room protected by [BLVCK DRVGON]™")
 #-----------------------------------------------
             elif msg.text in ["PING","Ping","ping"]:
                 ki.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
@@ -1639,9 +1792,9 @@ def bot(op):
                 kc.sendText(msg.to,"PONG 􀨁􀄻double thumbs up􏿿􀜁􀅔Har Har􏿿")
 #-----------------------------------------------
             elif msg.text in ["Respon","respon"]:
-                ki.sendText(msg.to,"Cv1")
-                kk.sendText(msg.to,"Cv2")
-                kc.sendText(msg.to,"Cv3")
+                ki.sendText(msg.to,"[BLVCK DRVGON]™ #001")
+                kk.sendText(msg.to,"[BLVCK DRVGON]™ #002")
+                kc.sendText(msg.to,"[BLVCK DRVGON]™ #003")
 #-----------------------------------------------
 
             elif msg.text in ["Sp","Speed","speed"]:
